@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+folder_directory="$1"
+
+date_time=$(date +"%Y%m%d_%H%M%S")
+
+sudo tar -czvf ~/Documents/log-storage/log_archive_${date_time}.tar.gz "${folder_directory}"
